@@ -1,4 +1,4 @@
-#include<Windows.h>
+Ôªø#include<Windows.h>
 #include<iostream>
 using namespace std;
 
@@ -22,19 +22,19 @@ void main()
 
 	//cout << 'a' - 'A' << endl;
 	const int n = 256;
-	char str[n] = "¿„ÂÌÚËÌ‡ Ï‡ÌËÚ ÌÂ„‡";
-	cout << "¬‚Â‰ËÚÂ ÒÚÓÍÛ: "; 
+	char str[n] = "–ê—Ä–≥–µ–Ω—Ç–∏–Ω–∞ –º–∞–Ω–∏—Ç –Ω–µ–≥—Ä–∞";
+	cout << "–í–≤–µ–¥–∏—Ç–µ —Å—Ç—Ä–æ–∫—É: "; 
 	//cin >> str;
 	SetConsoleCP(1251);
 	cin.getline(str, n);
 	SetConsoleCP(866);
 	cout << str << endl;
-	cout << "–‡ÁÏÂ ÒÚÓÍË: " << StringLength(str) << endl;
+	cout << "–†–∞–∑–º–µ—Ä —Å—Ç—Ä–æ–∫–∏: " << StringLength(str) << endl;
 	cout << to_upper(str) << endl;
 	cout << to_lower(str) << endl;
 	cout << shrink(str) << endl;
-	cout << "—ÚÓÍ‡ " << (is_palindrome(str)?"":"Õ≈ ") << "Ô‡ÎËÌ‰ÓÏ" << endl;
-	cout << "—ÚÓÍ‡ " << (is_int_number(str) ? "" : "Õ≈ ") << "ˇ‚ÎˇÂÚÒˇ ˜ËÒÎÓÏ" << endl;
+	cout << "–°—Ç—Ä–æ–∫–∞ " << (is_palindrome(str)?"":"–ù–ï ") << "–ø–∞–ª–∏–Ω–¥—Ä–æ–º" << endl;
+	cout << "–°—Ç–æ–∫–∞ " << (is_int_number(str) ? "" : "–ù–ï ") << "—è–≤–ª—è–µ—Ç—Å—è —á–∏—Å–ª–æ–º" << endl;
 	cout << to_int_number(str)*2 << endl;
 }
 int StringLength(const char* str)
@@ -48,7 +48,7 @@ char* to_upper(char str[])
 	for (int i = 0; str[i]; i++)
 	{
 		if(str[i]>= 'a' && str[i] <= 'z')str[i] -= ' ';
-		if(str[i]>= '‡' && str[i] <= 'ˇ')str[i] -= ' ';
+		if(str[i]>= '–∞' && str[i] <= '—è')str[i] -= ' ';
 
 	}
 	return str;
@@ -58,7 +58,7 @@ char* to_lower(char str[])
 	for (int i = 0; str[i]; i++)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')str[i] += ' ';
-		if (str[i] >= '¿' && str[i] <= 'ﬂ')str[i] += ' ';
+		if (str[i] >= '–ê' && str[i] <= '–Ø')str[i] += ' ';
 
 	}
 	return str;
